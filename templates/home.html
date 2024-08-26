@@ -4,17 +4,52 @@
 
 {% block content %}
 <!-- ========================= SECTION MAIN ========================= -->
+
 <section class="section-intro padding-y-sm">
     <div class="container">
     
-    <div class="intro-banner-wrap">
-        <a href="{% url "store" %}">
-            <img src="https://teststatic-livid.vercel.app/images/banners/banner.png" class="img-fluid rounded">
-        </a>
+    <!-- ========================= CAROUSEL ========================= -->
+  <!-- ========================= CAROUSEL ========================= -->
+<div id="carouselBanners" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselBanners" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselBanners" data-slide-to="1"></li>
+        <li data-target="#carouselBanners" data-slide-to="2"></li>
+        <!-- Add more indicators here if you have more images -->
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="{% url "store" %}">
+                <img src="https://teststatic-livid.vercel.app/images/banners/banner.png" class="d-block w-100 img-fluid rounded" alt="Banner Image 1">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a href="{% url "store" %}">
+                <img src="https://teststatic-livid.vercel.app/images/banners/e-commerce-banner.jpg" class="d-block w-100 img-fluid rounded" alt="Banner Image 2">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a href="{% url "store" %}">
+                <img src="https://teststatic-livid.vercel.app/images/banners/banner.jpg" class="d-block w-100 img-fluid rounded" alt="Banner Image 3">
+            </a>
+        </div>
+        <!-- Add more carousel-items here if you have more images -->
     </div>
+    <a class="carousel-control-prev" href="#carouselBanners" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselBanners" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- ========================= CAROUSEL END ========================= -->
+
+    <!-- ========================= CAROUSEL END ========================= -->
     
-    </div> <!-- container //  -->
-    </section>
+    </div> <!-- container // -->
+</section>
     <!-- ========================= SECTION MAIN END// ========================= -->
     
     <!-- ========================= SECTION  ========================= -->
