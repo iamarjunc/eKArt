@@ -8,16 +8,20 @@
       <div class="collapse navbar-collapse" id="navbarTop4">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
-                 <a href="#" class="nav-link">   English </a>
+                 {% comment %} <a href="#" class="nav-link">   English </a> {% endcomment %}
                 
             </li>
             <li class="nav-item dropdown">
-                <a href="#" class="nav-link"> USD </a>
+                {% comment %} <a href="#" class="nav-link"> USD </a> {% endcomment %}
             </li>
         </ul>
         <ul class="navbar-nav">
-            <li><a href="#" class="nav-link"> <i class="fa fa-envelope"></i> Email </a></li>
-            <li><a href="#" class="nav-link"> <i class="fa fa-phone"></i> Call us </a></li>
+            <li>
+                <a href="mailto:shopkartdemo@gmail.com" class="nav-link"> <i class="fa fa-envelope"></i> Email </a>
+            </li>
+            <li>
+                {% comment %} <a href="#" class="nav-link"> <i class="fa fa-phone"></i> Call us </a> {% endcomment %}
+            </li>
         </ul> <!-- list-inline //  -->
       </div> <!-- navbar-collapse .// -->
     </div> <!-- container //  -->
@@ -28,13 +32,13 @@
     <div class="row align-items-center">
         <div class="col-lg-2 col-md-3 col-6">
             <a href="{% url "home" %}" class="brand-wrap">
-                <img class="logo" src="{% static './images/logo.png' %}">
+                <img class="logo" src="{% static './images/shopkart.png' %}">
             </a> <!-- brand-wrap.// -->
         </div>
         <div class="col-lg col-sm col-md col-6 flex-grow-0">
             <div class="category-wrap dropdown d-inline-block float-right">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> 
-                    <i class="fa fa-bars"></i> All category 
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"> 
+                    All category 
                 </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="{% url 'store'%}">All Products</a>                    
@@ -46,14 +50,14 @@
                 </div>
             </div>  <!-- category-wrap.// -->
         </div> <!-- col.// -->
-        <a href="{% url "store" %}" class="btn btn-outline-primary">Store</a>
+        <a href="{% url "store" %}" class="btn btn-outline-info">Store</a>
         <div class="col-lg  col-md-6 col-sm-12 col">
             <form action="{% url "search" %}" class="search" method = 'GET'>
                 <div class="input-group w-100">
                     <input type="text" class="form-control" style="width:60%;" placeholder="Search" name = "keyword">
                     
                     <div class="input-group-append">
-                      <button class="btn btn-primary" type="submit">
+                      <button class="btn btn-info" type="submit">
                         <i class="fa fa-search"></i>
                       </button>
                     </div>
@@ -81,7 +85,15 @@
                         {% endif %}
                        
                         <a href="{% url "cart" %}" class="widget-header pl-3 ml-3">
-                            <div class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></div>
+                            <div class="icon icon-sm rounded-circle border">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                                  </svg>
+                                {% comment %} <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                                  </svg> {% endcomment %}
+                                {% comment %} <i class="fa fa-shopping-cart"></i> {% endcomment %}
+                            </div>
                             <span class="badge badge-pill badge-danger notify">{{cart_count}}</span>
                         </a>
                     </div> <!-- widgets-wrap.// -->

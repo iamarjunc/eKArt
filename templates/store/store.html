@@ -20,112 +20,125 @@
         <aside class="col-md-3">
             
     <div class="card">
-        <article class="filter-group">
-            <header class="card-header">
-                <a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
-                    <i class="icon-control fa fa-chevron-down"></i>
-                    <h6 class="title">Categories</h6>
-                </a>
-            </header>
-            <div class="filter-content collapse show" id="collapse_1" style="">
-                <div class="card-body">
-                    
-                    <ul class="list-menu">
-                        <li><a href="{% url "store" %}">All Products </a></li>
-
-                        {% for category in links %}
-                        <li><a href="{{category.get_url}}">{{category.category_name}}  </a></li>
-                        {% endfor %}                        
-                    </ul>
-    
-                </div> <!-- card-body.// -->
-            </div>
-        </article> <!-- filter-group  .// -->
-        <article class="filter-group">
-            <header class="card-header">
-                <a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true" class="">
-                    <i class="icon-control fa fa-chevron-down"></i>
-                    <h6 class="title">Sizes </h6>
-                </a>
-            </header>
-            <div class="filter-content collapse show" id="collapse_4" style="">
-                <div class="card-body">
-                  <label class="checkbox-btn">
-                    <input type="checkbox">
-                    <span class="btn btn-light"> XS </span>
-                  </label>
-    
-                  <label class="checkbox-btn">
-                    <input type="checkbox">
-                    <span class="btn btn-light"> SM </span>
-                  </label>
-    
-                  <label class="checkbox-btn">
-                    <input type="checkbox">
-                    <span class="btn btn-light"> LG </span>
-                  </label>
-    
-                  <label class="checkbox-btn">
-                    <input type="checkbox">
-                    <span class="btn btn-light"> XXL </span>
-                  </label>
-            </div><!-- card-body.// -->
-            </div>
-        </article> <!-- filter-group .// -->
+        <form method="GET" action="{% url 'store' %}">
+            <!-- Filter for Colors -->
+            <article class="filter-group">
+                <header class="card-header">
+                    <a href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="true" class="">
+                        <i class="icon-control fa fa-chevron-down"></i>
+                        <h6 class="title">Colors</h6>
+                    </a>
+                </header>
+                <div class="filter-content collapse show" id="collapse_2" style="">
+                    <div class="card-body">
+                        {% for color in available_colors %}
+                            <label class="checkbox-btn">
+                                <input type="checkbox" name="color" value="{{ color }}" 
+                                {% if color in selected_colors %}checked{% endif %}>
+                                <span class="btn btn-light">{{ color }}</span>
+                            </label>
+                        {% endfor %}
+                    </div>
+                </div>
+            </article>
         
-        <article class="filter-group">
-            <header class="card-header">
-                <a href="#" data-toggle="collapse" data-target="#collapse_3" aria-expanded="true" class="">
-                    <i class="icon-control fa fa-chevron-down"></i>
-                    <h6 class="title">Price range </h6>
-                </a>
-            </header>
-            <div class="filter-content collapse show" id="collapse_3" style="">
-                <div class="card-body">
-                    
-                    <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label>Min</label>
-                      <!-- <input class="form-control" placeholder="$0" type="number"> -->
-                          <select class="mr-2 form-control">
-                            <option value="0">$0</option>
-                            <option value="50">$50</option>
-                            <option value="100">$100</option>
-                            <option value="150">$150</option>
-                            <option value="200">$200</option>
-                            <option value="500">$500</option>
-                            <option value="1000">$1000</option>
-                        </select>
+            <!-- Filter for Sizes -->
+            <article class="filter-group">
+                <header class="card-header">
+                    <a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true" class="">
+                        <i class="icon-control fa fa-chevron-down"></i>
+                        <h6 class="title">Sizes</h6>
+                    </a>
+                </header>
+                <div class="filter-content collapse show" id="collapse_4" style="">
+                    <div class="card-body">
+                        {% for size in available_sizes %}
+                            <label class="checkbox-btn">
+                                <input type="checkbox" name="size" value="{{ size }}" 
+                                {% if size in selected_sizes %}checked{% endif %}>
+                                <span class="btn btn-light">{{ size }}</span>
+                            </label>
+                        {% endfor %}
                     </div>
-                    <div class="form-group text-right col-md-6">
-                      <label>Max</label>
-                          <select class="mr-2 form-control">
-                            <option value="50">$50</option>
-                            <option value="100">$100</option>
-                            <option value="150">$150</option>
-                            <option value="200">$200</option>
-                            <option value="500">$500</option>
-                            <option value="1000">$1000</option>
-                            <option value="2000">$2000+</option>
-                        </select>
+                </div>
+            </article>
+        
+            <!-- Filter for Price Range -->
+            <article class="filter-group">
+                <header class="card-header">
+                    <a href="#" data-toggle="collapse" data-target="#collapse_3" aria-expanded="true" class="">
+                        <i class="icon-control fa fa-chevron-down"></i>
+                        <h6 class="title">Price range</h6>
+                    </a>
+                </header>
+                <div class="filter-content collapse show" id="collapse_3" style="">
+                    <div class="card-body">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Min</label>
+                                <select class="mr-2 form-control" name="min_price">
+                                    <option value="0" {% if selected_min_price == "0" %}selected{% endif %}>₹0</option>
+                                    <option value="50" {% if selected_min_price == "50" %}selected{% endif %}>₹50</option>
+                                    <option value="100" {% if selected_min_price == "100" %}selected{% endif %}>₹100</option>
+                                    <option value="150" {% if selected_min_price == "150" %}selected{% endif %}>₹150</option>
+                                    <option value="200" {% if selected_min_price == "200" %}selected{% endif %}>₹200</option>
+                                    <option value="500" {% if selected_min_price == "500" %}selected{% endif %}>₹500</option>
+                                    <option value="1000" {% if selected_min_price == "1000" %}selected{% endif %}>₹1000</option>
+                                </select>
+                            </div>
+                            <div class="form-group text-right col-md-6">
+                                <label>Max</label>
+                                <select class="mr-2 form-control" name="max_price">
+                                    <option value="50" {% if selected_max_price == "50" %}selected{% endif %}>₹50</option>
+                                    <option value="100" {% if selected_max_price == "100" %}selected{% endif %}>₹100</option>
+                                    <option value="150" {% if selected_max_price == "150" %}selected{% endif %}>₹150</option>
+                                    <option value="200" {% if selected_max_price == "200" %}selected{% endif %}>₹200</option>
+                                    <option value="500" {% if selected_max_price == "500" %}selected{% endif %}>₹500</option>
+                                    <option value="1000" {% if selected_max_price == "1000" %}selected{% endif %}>₹1000</option>
+                                    <option value="2000" {% if selected_max_price == "2000" %}selected{% endif %}>₹2000+</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    </div> <!-- form-row.// -->
-                    <button class="btn btn-block btn-primary">Apply</button>
-                </div><!-- card-body.// -->
-            </div>
-        </article> <!-- filter-group .// -->
+                </div>
+            </article>
+        
+            <button class="btn btn-block btn-info" type="submit">Apply</button>
+        </form>
+        
         
     </div> <!-- card.// -->
     
         </aside> <!-- col.// -->
         <main class="col-md-9">
     
-    <header class="border-bottom mb-4 pb-3">
-            <div class="form-inline">
-                <span class="mr-md-auto"><b>{{product_count}}</b> Items found </span>
-                
-            </div>
-    </header><!-- sect-heading -->
+            <header class="border-bottom mb-4 pb-3">
+                <div class="form-inline">
+                    <span class="mr-md-auto"><b>{{ product_count }}</b> Items found</span>
+                    
+                    <form method="GET" action="{% url 'store' %}" class="ml-auto">
+                        <!-- Retain other filters -->
+                        {% for color in selected_colors %}
+                            <input type="hidden" name="color" value="{{ color }}">
+                        {% endfor %}
+                        {% for size in selected_sizes %}
+                            <input type="hidden" name="size" value="{{ size }}">
+                        {% endfor %}
+                        
+                        
+    <div class="form-group">
+        <label for="sort">Sort by:</label>
+        <select name="sort" id="sort" class="form-control" onchange="this.form.submit()">
+            <option value="">Default</option>
+            <option value="price_low_to_high" {% if sort_option == 'price_low_to_high' %}selected{% endif %}>Price: Low to High</option>
+            <option value="price_high_to_low" {% if sort_option == 'price_high_to_low' %}selected{% endif %}>Price: High to Low</option>
+            <option value="popularity" {% if sort_option == 'popularity' %}selected{% endif %}>Popularity</option>
+        </select>
+    </div>
+                    </form>
+                </div>
+            </header>
+            
     
     <div class="row">
         {% if products %}
@@ -146,7 +159,7 @@
                         </div> <!-- price-wrap.// -->
                     </div>
 
-                    <a href="{{product.get_url}}" class="btn btn-block btn-primary">View Details </a>
+                    <a href="{{product.get_url}}" class="btn btn-block btn-info">View Details </a>
                 </figcaption>
             </figure>
         </div> <!-- col.// -->   

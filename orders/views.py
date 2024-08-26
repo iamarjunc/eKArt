@@ -125,6 +125,7 @@ def payments(request):
     })
     to_email = request.user.email
     send_email = EmailMessage(mail_subject,message, to=[to_email])
+    print(to_email,mail_subject,message,send_email)
     send_email.send()
 
     # Send order number and payment transaction id back to SendDAta method via JsonResponse

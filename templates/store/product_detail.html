@@ -76,7 +76,7 @@
           <h5 style="color: red;">Out of Stock</h5>
 
           {% else %}   
-            <button type="submit"  class="btn  btn-primary"> <span class="text">Add to cart</span> <i class="fas fa-shopping-cart"></i>  </button >
+            <button type="submit"  class="btn  btn-info"> <span class="text">Add to cart</span> <i class="fas fa-shopping-cart"></i>  </button >
             
           
             {% endif %}
@@ -125,7 +125,7 @@
                 <br>
                 {% if user.is_authenticated %}
                 {% if orderproduct %}
-                <input type="submit" value="Submit Review" class="btn btn-primary">
+                <input type="submit" value="Submit Review" class="btn btn-info">
                 {% else %}
                 <p>You must purchase this product to post a review.</p>
 
@@ -157,7 +157,7 @@
     {% for review in reviews %}
         <article class="box mb-3">
             <div class="icontext w-100">
-                <img src="{{userprofile.profile_picture.url}}" class="img-xs icon rounded-circle">
+                {% comment %} <img src="{{userprofile.profile_picture.url}}" class="img-xs icon rounded-circle"> {% endcomment %}
                 <div class="text">
                     <span class="date text-muted float-md-right">{{review.updated_at}} </span>  
                     <h6 class="mb-1">{{review.user.full_name }} </h6>

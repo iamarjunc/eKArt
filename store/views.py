@@ -6,35 +6,69 @@ from cart.views import _cart_id
 from category.models import Category
 from orders.models import OrderProduct
 from store.forms import ReviewForm
-from store.models import Product, ProductGallery, ReviewRating
+from store.models import Product, ProductGallery, ReviewRating, Variation
 from django.core.paginator import EmptyPage,PageNotAnInteger,Paginator
 from django.db.models import Q
-
+from django.db.models import Count, Avg
 # Create your views here.
 def store(request, category_slug=None):
     categories = None
     products = None
+
+    # Filter by category if provided
+    if category_slug:
+        categories = get_object_or_404(Category, slug=category_slug)
+        products = Product.objects.filter(category=categories, is_available=True)
+    else:
+        products = Product.objects.filter(is_available=True)
+
+    # Filtering by color, size, and price range
+    selected_colors = request.GET.getlist('color') if 'color' in request.GET else []
+    selected_sizes = request.GET.getlist('size') if 'size' in request.GET else []
+    min_price = request.GET.get('min_price') if 'min_price' in request.GET else None
+    max_price = request.GET.get('max_price') if 'max_price' in request.GET else None
+    sort_option = request.GET.get('sort', '')
+
+    if selected_colors:
+        products = products.filter(variation__variation_category='color', variation__variation_value__in=selected_colors).distinct()
+
+    if selected_sizes:
+        products = products.filter(variation__variation_category='size', variation__variation_value__in=selected_sizes).distinct()
+
+    if min_price and max_price:
+        products = products.filter(price__gte=min_price, price__lte=max_price)
+
+    # Sorting
+    if sort_option == 'price_low_to_high':
+        products = products.order_by('price')
+    elif sort_option == 'price_high_to_low':
+        products = products.order_by('-price')
+    elif sort_option == 'popularity':
+        products = products.annotate(review_count=Count('reviewrating')).order_by('-review_count')
     
-    if category_slug != None:
-        categories = get_object_or_404(Category,slug = category_slug)
-        print(categories)
-        products = Product.objects.filter(category = categories, is_available = True)
-        paginator = Paginator(products, 3)
-        page = request.GET.get('page')
-        paged_products = paginator.get_page(page)
-        product_count = products.count()
-    else:        
-        products = Product.objects.all().filter(is_available=True).order_by('id')
-        paginator = Paginator(products, 3)
-        page = request.GET.get('page')
-        paged_products = paginator.get_page(page)
-        product_count = products.count()
-        
+    # Pagination
+    paginator = Paginator(products, 3)  # Change the number to adjust items per page
+    page = request.GET.get('page')
+    paged_products = paginator.get_page(page)
+    product_count = products.count()
+
+    # Fetch available colors and sizes for the filter
+    available_colors = Variation.objects.filter(variation_category='color').values_list('variation_value', flat=True).distinct()
+    available_sizes = Variation.objects.filter(variation_category='size').values_list('variation_value', flat=True).distinct()
+
     context = {
-        'products' : paged_products,
-        'product_count' : product_count,
+        'products': paged_products,
+        'product_count': product_count,
+        'available_colors': available_colors,
+        'available_sizes': available_sizes,
+        'selected_colors': selected_colors,
+        'selected_sizes': selected_sizes,
+        'selected_min_price': min_price,
+        'selected_max_price': max_price,
+        'sort_option': sort_option,  # Add this to maintain the selected sort option in the template
     }
-    return render(request,'store/store.html', context)
+    return render(request, 'store/store.html', context)
+
 
 def product_detail(request,category_slug,product_slug):
     try:
