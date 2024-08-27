@@ -22,6 +22,10 @@
       {
         "src": "/(.*)",
         "dest": "ekart/wsgi.py"
+      },
+      {
+          "src": "/media/(.*)",
+          "dest": "/media/$1"
       }
     ]
   }

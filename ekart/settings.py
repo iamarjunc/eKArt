@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['.vercel.app','django-env-1.eba-rj2zwr6w.us-west-2.elasticbeanstalk.com','*']
 
 
@@ -148,32 +148,32 @@ AUTH_USER_MODEL = 'accounts.Account'
 #         'PORT': '6543',       # Default PostgreSQL port
 #     }
 # }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': config('DATABASE_NAME'),
-#         'USER': config('DATABASE_USER'),
-#         'PASSWORD': config('DATABASE_PASSWORD'),
-#         'HOST': config('DATABASE_HOST'),
-#         'PORT': config('DATABASE_PORT'),
-#     }
-# }
-# # 
-
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
-        'NAME': 'SHOPKART',
-        'USER':'Sa',
-        'PASSWORD':'S@pdb#39',
-        'HOST':'ACER\SQLEXPRESS',
-        'PORT':'',
-        'OPTIONS':{
-            'driver':'ODBC Driver 17 for SQL Server',
-            'MARS_Connection':True
-        }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DATABASE_NAME'),
+        'USER': config('DATABASE_USER'),
+        'PASSWORD': config('DATABASE_PASSWORD'),
+        'HOST': config('DATABASE_HOST'),
+        'PORT': config('DATABASE_PORT'),
     }
 }
+# 
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'mssql',
+#         'NAME': 'SHOPKART',
+#         'USER':'Sa',
+#         'PASSWORD':'S@pdb#39',
+#         'HOST':'ACER\SQLEXPRESS',
+#         'PORT':'',
+#         'OPTIONS':{
+#             'driver':'ODBC Driver 17 for SQL Server',
+#             'MARS_Connection':True
+#         }
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
