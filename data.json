@@ -1,5 +1,1019 @@
 [
 {
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-08-26T02:00:59.285Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "Shoes",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-08-26T02:04:47.663Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Adidas CyberRun M Running Shoes For Men",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"Adidas CyberRun M Running Shoes For Men\"}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"Adidas CyberRun M Running Shoes For Men\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-08-26T02:06:54.481Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Blue",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-08-26T02:07:07.130Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Black",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-08-26T02:07:26.523Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-08-26T02:07:36.396Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-08-26T02:09:11.628Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Quality",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-08-26T02:13:41.814Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "PUMA  Ferrari R-Cat Machina Motorsport Shoes For Men",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"PUMA  Ferrari R-Cat Machina Motorsport Shoes For Men\"}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"PUMA  Ferrari R-Cat Machina Motorsport Shoes For Men\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-08-26T02:14:56.603Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "Black",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-08-26T02:15:07.889Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "6",
+    "object_repr": "6",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-08-26T02:15:17.089Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-08-26T02:15:28.973Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-08-26T02:17:47.955Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "TShirt",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-08-26T02:19:19.171Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Allen Solly  Men Colorblock Polo Neck Cotton Blend Blue T-Shirt",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"Allen Solly  Men Colorblock Polo Neck Cotton Blend Blue T-Shirt\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-08-26T02:22:22.725Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Allen Solly  Men Graphic Print Round Neck Pure Cotton Orange T-Shirt",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"Allen Solly  Men Graphic Print Round Neck Pure Cotton Orange T-Shirt\"}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"Allen Solly  Men Graphic Print Round Neck Pure Cotton Orange T-Shirt\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2024-08-26T02:24:20.547Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "9",
+    "object_repr": "Blue",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2024-08-26T02:24:32.320Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "10",
+    "object_repr": "Orange",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2024-08-26T02:24:43.468Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "11",
+    "object_repr": "S",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2024-08-26T02:24:53.151Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "12",
+    "object_repr": "M",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2024-08-26T02:25:03.617Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "13",
+    "object_repr": "L",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2024-08-26T02:25:18.489Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "14",
+    "object_repr": "S",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2024-08-26T02:25:29.804Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "15",
+    "object_repr": "L",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2024-08-26T02:29:11.845Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "3",
+    "object_repr": "Smart Phone",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2024-08-26T02:30:45.310Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Apple iPhone 15 (Blue, 128 GB)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2024-08-26T02:32:15.209Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "4",
+    "object_repr": "Smart Watch",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2024-08-26T02:36:06.587Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Fire-Boltt Rock 33.02mm (1.3) AMOLED Display, BT Calling, Rotating Crown, Voice Assistant Smartwatch",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"Fire-Boltt Rock 33.02mm (1.3) AMOLED Display, BT Calling, Rotating Crown, Voice Assistant Smartwatch\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2024-08-26T02:40:01.391Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "5",
+    "object_repr": "Bracelet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2024-08-26T02:42:50.998Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "Leather Bracelet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"Leather Bracelet\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2024-08-26T02:45:20.298Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "Leather Silver Bracelet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2024-08-26T02:47:41.713Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "Stainless Steel Silver Bracelet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2024-08-26T03:12:37.575Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "6",
+    "object_repr": "Men Cargo",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2024-08-26T03:56:12.790Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "9",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Variation category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2024-08-27T04:37:54.828Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "Shoes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cat image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2024-08-27T04:39:00.819Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "TShirt",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cat image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2024-08-27T04:40:10.304Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "3",
+    "object_repr": "Smart Phone",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cat image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2024-08-27T04:41:17.946Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "TShirt",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cat image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2024-08-27T04:42:20.508Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "Shoes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cat image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2024-08-27T04:43:16.747Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "4",
+    "object_repr": "Smart Watch",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cat image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2024-08-27T04:43:57.741Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "5",
+    "object_repr": "Bracelet",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cat image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2024-08-27T04:45:05.492Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "5",
+    "object_repr": "Men Bracelet",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category name\", \"Cat image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2024-08-27T04:46:08.307Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "6",
+    "object_repr": "Men Cargo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cat image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2024-08-27T06:07:02.674Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "3",
+    "object_repr": "Smart Phone",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2024-08-27T06:08:35.471Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "7",
+    "object_repr": "Shirts",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2024-08-27T06:09:27.169Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Fire-Boltt Rock 33.02mm (1.3) AMOLED Display Smartwatch",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Product name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2024-08-27T06:10:29.404Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "16",
+    "object_repr": "Black",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2024-08-27T06:11:02.205Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "17",
+    "object_repr": "33.02 mm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2024-08-27T06:12:46.734Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "18",
+    "object_repr": "Brown",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2024-08-27T06:12:57.748Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "19",
+    "object_repr": "Free Size",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2024-08-27T06:13:08.266Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "20",
+    "object_repr": "Black",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2024-08-27T06:13:20.049Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "21",
+    "object_repr": "Free Size",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2024-08-27T06:13:43.887Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "22",
+    "object_repr": "Silver",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2024-08-27T06:13:55.329Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "23",
+    "object_repr": "Free Size",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2024-08-27T06:15:54.367Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "ZAYSH  Men Cargos",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"ZAYSH  Men Cargos\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2024-08-27T06:16:11.334Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "24",
+    "object_repr": "Black",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2024-08-27T06:16:25.263Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "25",
+    "object_repr": "Brown",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2024-08-27T06:16:50.114Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "26",
+    "object_repr": "30",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2024-08-27T06:16:56.963Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "27",
+    "object_repr": "34",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2024-08-27T06:17:12.084Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "28",
+    "object_repr": "36",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2024-08-27T06:17:44.765Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Quality",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2024-08-27T06:18:14.016Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Quality",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2024-08-27T06:18:35.630Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Fabric Quality is poor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2024-08-27T06:19:37.414Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "admin@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"Phone number\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2024-08-27T06:20:14.946Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "admin@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2024-08-27T06:20:39.660Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "Quality is Good",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2024-08-27T06:20:58.668Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "Quality is Good",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2024-08-27T06:21:18.544Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "Good",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2024-08-27T06:21:40.211Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "Design nice",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2024-08-27T06:22:04.727Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "8",
+    "object_repr": "Leather Quality is poor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2024-08-27T06:23:04.510Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "9",
+    "object_repr": "Good",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2024-08-27T06:23:25.447Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "10",
+    "object_repr": "Stylish",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2024-08-27T06:25:31.440Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "11",
+    "object_repr": "U.S. POLO ASSN.  Men Tailored Fit Printed Cut Away Collar Casual Shirt",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"U.S. POLO ASSN.  Men Tailored Fit Printed Cut Away Collar Casual Shirt\"}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"U.S. POLO ASSN.  Men Tailored Fit Printed Cut Away Collar Casual Shirt\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2024-08-27T06:26:44.156Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "11",
+    "object_repr": "U.S. POLO ASSN.  Men Tailored Fit  Cut Away Collar Casual Shirt",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Product name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2024-08-27T06:27:28.739Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "29",
+    "object_repr": "White",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2024-08-27T06:27:41.487Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "30",
+    "object_repr": "M",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2024-08-27T06:27:50.273Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "31",
+    "object_repr": "L",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2024-08-27T06:27:55.837Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "32",
+    "object_repr": "L",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2024-08-27T06:28:04.453Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "33",
+    "object_repr": "XL",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2024-08-27T06:28:27.217Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "11",
+    "object_repr": "Good",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -327,36 +1341,36 @@
   "model": "auth.permission",
   "pk": 37,
   "fields": {
-    "name": "Can add variation",
+    "name": "Can add productgallery",
     "content_type": 10,
-    "codename": "add_variation"
+    "codename": "add_productgallery"
   }
 },
 {
   "model": "auth.permission",
   "pk": 38,
   "fields": {
-    "name": "Can change variation",
+    "name": "Can change productgallery",
     "content_type": 10,
-    "codename": "change_variation"
+    "codename": "change_productgallery"
   }
 },
 {
   "model": "auth.permission",
   "pk": 39,
   "fields": {
-    "name": "Can delete variation",
+    "name": "Can delete productgallery",
     "content_type": 10,
-    "codename": "delete_variation"
+    "codename": "delete_productgallery"
   }
 },
 {
   "model": "auth.permission",
   "pk": 40,
   "fields": {
-    "name": "Can view variation",
+    "name": "Can view productgallery",
     "content_type": 10,
-    "codename": "view_variation"
+    "codename": "view_productgallery"
   }
 },
 {
@@ -399,36 +1413,36 @@
   "model": "auth.permission",
   "pk": 45,
   "fields": {
-    "name": "Can add productgallery",
+    "name": "Can add variation",
     "content_type": 12,
-    "codename": "add_productgallery"
+    "codename": "add_variation"
   }
 },
 {
   "model": "auth.permission",
   "pk": 46,
   "fields": {
-    "name": "Can change productgallery",
+    "name": "Can change variation",
     "content_type": 12,
-    "codename": "change_productgallery"
+    "codename": "change_variation"
   }
 },
 {
   "model": "auth.permission",
   "pk": 47,
   "fields": {
-    "name": "Can delete productgallery",
+    "name": "Can delete variation",
     "content_type": 12,
-    "codename": "delete_productgallery"
+    "codename": "delete_variation"
   }
 },
 {
   "model": "auth.permission",
   "pk": 48,
   "fields": {
-    "name": "Can view productgallery",
+    "name": "Can view variation",
     "content_type": 12,
-    "codename": "view_productgallery"
+    "codename": "view_variation"
   }
 },
 {
@@ -724,7 +1738,7 @@
   "pk": 10,
   "fields": {
     "app_label": "store",
-    "model": "variation"
+    "model": "productgallery"
   }
 },
 {
@@ -740,7 +1754,7 @@
   "pk": 12,
   "fields": {
     "app_label": "store",
-    "model": "productgallery"
+    "model": "variation"
   }
 },
 {
@@ -793,28 +1807,1012 @@
 },
 {
   "model": "sessions.session",
-  "pk": "xccw6tkijyylew5nyi0ff7k64ak4zrr2",
+  "pk": "cezt29uxvufxdddtwwhohx8la3clx4gl",
   "fields": {
-    "session_data": "ZGNiZTBmYjMwYTQ0NGY0NTRiMWFiNGJmM2FiNjRkOGJlMzAzNWUyYTp7Il9zZXNzaW9uX2luaXRfdGltZXN0YW1wXyI6MTcyNDYzNDkyNS41MjI0NjkzfQ==",
-    "expire_date": "2024-09-09T01:15:25.919Z"
+    "session_data": ".eJxVjEEOgyAQRe_CuiEOKqjL7nsGMgNDpa3QCK6a3r01ceP2v_f-R9jCpcScbEyx2hoXLhWXtxUTGNWZrgFlZNe2ulNwERa3Otut8GqjF5MAcdoI3ZPTDvwD0z1Ll1NdI8ldkQct8pY9v66HezqYscz_WmuFIwARaqWMQQ_YAjQNGyDnRs0wBPI49MSq8R5cCDySVhT6cQgOxPcH_5FG9w:1siph9:Ou4TcVG3FFOY2LZ6DUZTiHesahFxFOB5QnsrSslM0LA",
+    "expire_date": "2024-09-10T06:28:47.433Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ez2w1bnfkhyc9403o7q1emphkf1budf7",
+  "fields": {
+    "session_data": "eyJfc2Vzc2lvbl9pbml0X3RpbWVzdGFtcF8iOjE3MjQ3MzM0MjEuOTA1MTYxMX0:1sinwz:D66XwSTYuCTJ3hhfPr-a5EXwQXnd4IOAJ9XseyelTa4",
+    "expire_date": "2024-09-10T04:37:01.964Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "olc7h7kjevr86o1d7er66dvwm5hahy5r",
+  "fields": {
+    "session_data": "eyJfc2Vzc2lvbl9pbml0X3RpbWVzdGFtcF8iOjE3MjQ3MzcxOTIuMjkzOTcyM30:1siovo:7z03pNQziaPmU7AZA0f6H87KYbXyAx61w07ggnlUAzc",
+    "expire_date": "2024-09-10T05:39:52.301Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "u76vrwla2silw034ohh7ld0lgs8j6si2",
+  "fields": {
+    "session_data": "eyJfc2Vzc2lvbl9pbml0X3RpbWVzdGFtcF8iOjE3MjQ2OTAwOTguMTM4NTAyNn0:1sicgE:a22nUCyQGjGDGEgaCS-RpHL5i5xhbHqqOmm0M8R_YxM",
+    "expire_date": "2024-09-09T16:34:58.144Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "uy287pi7fx4ofg7aq0gxs4y8fyvoql7t",
+  "fields": {
+    "session_data": "eyJfc2Vzc2lvbl9pbml0X3RpbWVzdGFtcF8iOjE3MjQ2NDQ2NjQuMzc1MTUyOH0:1siQrQ:tw9wWGeGMqcN__8ep2f8FRY4pNlgESRNNZfSeyQF1fc",
+    "expire_date": "2024-09-09T03:57:44.421Z"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 1,
+  "fields": {
+    "category_name": "Shoes",
+    "slug": "shoes",
+    "description": "",
+    "cat_image": "photos/categories/show_cover_kFcPOEP.png"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 2,
+  "fields": {
+    "category_name": "TShirt",
+    "slug": "tshirt",
+    "description": "",
+    "cat_image": "photos/categories/tahirt.webp"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 4,
+  "fields": {
+    "category_name": "Smart Watch",
+    "slug": "smart-watch",
+    "description": "",
+    "cat_image": "photos/categories/smartwat.webp"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 5,
+  "fields": {
+    "category_name": "Men Bracelet",
+    "slug": "bracelet",
+    "description": "",
+    "cat_image": "photos/categories/bracelet_sNH7q23.jpg"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 6,
+  "fields": {
+    "category_name": "Men Cargo",
+    "slug": "men-cargo",
+    "description": "",
+    "cat_image": "photos/categories/cargo.jpg"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 7,
+  "fields": {
+    "category_name": "Shirts",
+    "slug": "shirts",
+    "description": "",
+    "cat_image": "photos/categories/shirt.jpg"
   }
 },
 {
   "model": "accounts.account",
   "pk": 1,
   "fields": {
-    "password": "pbkdf2_sha256$150000$dvlM4qXaYwjj$Q7856kOGmgBH6sEkAmQFjjc/IfSxoTrnrW+sW6q2igk=",
-    "first_name": "admin",
-    "last_name": "1",
-    "username": "admin",
+    "password": "pbkdf2_sha256$720000$qsHN4f9hs6lJx050jDqIIj$+qp3qnekE7G0wVrAP16wGAHX3fxm3kWmLuc7Yx67U2k=",
+    "first_name": "Anonymous",
+    "last_name": "user",
+    "username": "anonymus",
     "email": "admin@gmail.com",
-    "phone_number": "",
-    "date_joined": "2024-08-26T01:14:32.056Z",
-    "last_login": "2024-08-26T01:14:32.056Z",
+    "phone_number": "123456789",
+    "date_joined": "2024-08-26T01:52:05.185Z",
+    "last_login": "2024-08-27T06:06:52.345Z",
     "is_admin": true,
     "is_staff": true,
     "is_active": true,
     "is_superadmin": true
+  }
+},
+{
+  "model": "accounts.account",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$argf5aik8fM2Hs1PKNhx98$CTJ4IF+ZOuI4FHd4OGB0EFPK3pnOv1aRtPYV7zakGik=",
+    "first_name": "Arjun",
+    "last_name": "C",
+    "username": "arjunchandrakumar2017",
+    "email": "arjunchandrakumar2017@gmail.com",
+    "phone_number": "8590587938",
+    "date_joined": "2024-08-26T01:54:50.639Z",
+    "last_login": "2024-08-27T02:01:35.166Z",
+    "is_admin": false,
+    "is_staff": false,
+    "is_active": true,
+    "is_superadmin": false
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "address_line_1": "",
+    "address_line_2": "",
+    "profile_picture": "default/default-user.jpg",
+    "city": "",
+    "state": "",
+    "country": ""
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1,
+  "fields": {
+    "product_name": "Adidas CyberRun M Running Shoes For Men",
+    "slug": "adidas-cyberrun-m-running-shoes-for-men",
+    "decription": "Adidas CyberRun M Running Shoes For Men",
+    "price": 2021,
+    "images": "photos/products/adidas1.webp",
+    "stock": 5,
+    "is_available": true,
+    "category": 1,
+    "created_date": "2024-08-26T02:04:47.632Z",
+    "modified_date": "2024-08-26T02:04:47.632Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 2,
+  "fields": {
+    "product_name": "PUMA  Ferrari R-Cat Machina Motorsport Shoes For Men",
+    "slug": "puma-ferrari-r-cat-machina-motorsport-shoes-for-men",
+    "decription": "Color\r\nBlack\r\nOuter material\r\nSynthetic Leather\r\nModel name\r\nFerrari R-Cat Machina\r\nIdeal for\r\nMen\r\nOccasion\r\nSports\r\nType For Sports\r\nMotorsport Shoes\r\nNet Quantity\r\n1\r\nSole material\r\nRubber",
+    "price": 2999,
+    "images": "photos/products/puma3.webp",
+    "stock": 6,
+    "is_available": true,
+    "category": 1,
+    "created_date": "2024-08-26T02:13:41.798Z",
+    "modified_date": "2024-08-26T02:13:41.798Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 3,
+  "fields": {
+    "product_name": "Allen Solly  Men Colorblock Polo Neck Cotton Blend Blue T-Shirt",
+    "slug": "allen-solly-men-colorblock-polo-neck-cotton-blend-blue-t-shirt",
+    "decription": "Product Details\r\n\r\nType\r\nPolo Neck\r\nSleeve\r\nHalf Sleeve\r\nFit\r\nRegular\r\nFabric\r\nCotton Blend\r\nPack of\r\n1\r\nStyle Code\r\nASKPORGFD14628_New\r\nNeck Type\r\nPolo Neck\r\nIdeal For\r\nMen",
+    "price": 599,
+    "images": "photos/products/allensolly1.webp",
+    "stock": 7,
+    "is_available": true,
+    "category": 2,
+    "created_date": "2024-08-26T02:19:19.156Z",
+    "modified_date": "2024-08-26T02:19:19.156Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 4,
+  "fields": {
+    "product_name": "Allen Solly  Men Graphic Print Round Neck Pure Cotton Orange T-Shirt",
+    "slug": "allen-solly-men-graphic-print-round-neck-pure-cotton-orange-t-shirt",
+    "decription": "Type\r\nPolo Neck",
+    "price": 495,
+    "images": "photos/products/allensolly11.webp",
+    "stock": 5,
+    "is_available": true,
+    "category": 2,
+    "created_date": "2024-08-26T02:22:22.715Z",
+    "modified_date": "2024-08-26T02:22:22.715Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 6,
+  "fields": {
+    "product_name": "Fire-Boltt Rock 33.02mm (1.3) AMOLED Display Smartwatch",
+    "slug": "fire-boltt-rock-3302mm-13-amoled-display-bt-calling-rotating-crown-voice-assistant-smartwatch",
+    "decription": "Fire-Boltt Rock 33.02mm (1.3) AMOLED Display, BT Calling, Rotating Crown, Voice Assistant Smartwatch",
+    "price": 2099,
+    "images": "photos/products/smart_fire_bolt1.webp",
+    "stock": 30,
+    "is_available": true,
+    "category": 4,
+    "created_date": "2024-08-26T02:36:06.572Z",
+    "modified_date": "2024-08-27T06:09:27.153Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 7,
+  "fields": {
+    "product_name": "Leather Bracelet",
+    "slug": "leather-bracelet",
+    "decription": "Leather Bracelet",
+    "price": 239,
+    "images": "photos/products/bracele_2.webp",
+    "stock": 50,
+    "is_available": true,
+    "category": 5,
+    "created_date": "2024-08-26T02:42:50.982Z",
+    "modified_date": "2024-08-26T02:42:50.982Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 8,
+  "fields": {
+    "product_name": "Leather Silver Bracelet",
+    "slug": "leather-silver-bracelet",
+    "decription": "Leather Silver Bracelet",
+    "price": 199,
+    "images": "photos/products/bracelet_3.webp",
+    "stock": 40,
+    "is_available": true,
+    "category": 5,
+    "created_date": "2024-08-26T02:45:20.298Z",
+    "modified_date": "2024-08-26T02:45:20.298Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 9,
+  "fields": {
+    "product_name": "Stainless Steel Silver Bracelet",
+    "slug": "stainless-steel-silver-bracelet",
+    "decription": "Stainless Steel Silver Bracelet",
+    "price": 237,
+    "images": "photos/products/bracelet_4.webp",
+    "stock": 30,
+    "is_available": true,
+    "category": 5,
+    "created_date": "2024-08-26T02:47:41.713Z",
+    "modified_date": "2024-08-26T02:47:41.713Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 10,
+  "fields": {
+    "product_name": "ZAYSH  Men Cargos",
+    "slug": "zaysh-men-cargos",
+    "decription": "Cotton Lycra Blend",
+    "price": 740,
+    "images": "photos/products/cargo1.webp",
+    "stock": 3,
+    "is_available": true,
+    "category": 6,
+    "created_date": "2024-08-27T06:15:54.365Z",
+    "modified_date": "2024-08-27T06:15:54.365Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 11,
+  "fields": {
+    "product_name": "U.S. POLO ASSN.  Men Tailored Fit  Cut Away Collar Casual Shirt",
+    "slug": "us-polo-assn-men-tailored-fit-printed-cut-away-collar-casual-shirt",
+    "decription": "",
+    "price": 1088,
+    "images": "photos/products/uspa1.webp",
+    "stock": 2,
+    "is_available": true,
+    "category": 7,
+    "created_date": "2024-08-27T06:25:31.437Z",
+    "modified_date": "2024-08-27T06:26:44.156Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "variation_category": "color",
+    "variation_value": "Blue",
+    "is_active": true,
+    "created_date": "2024-08-26T02:06:54.474Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 2,
+  "fields": {
+    "product": 1,
+    "variation_category": "color",
+    "variation_value": "Black",
+    "is_active": true,
+    "created_date": "2024-08-26T02:07:07.124Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 3,
+  "fields": {
+    "product": 1,
+    "variation_category": "size",
+    "variation_value": "8",
+    "is_active": true,
+    "created_date": "2024-08-26T02:07:26.514Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 4,
+  "fields": {
+    "product": 1,
+    "variation_category": "size",
+    "variation_value": "9",
+    "is_active": true,
+    "created_date": "2024-08-26T02:07:36.396Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 5,
+  "fields": {
+    "product": 2,
+    "variation_category": "color",
+    "variation_value": "Black",
+    "is_active": true,
+    "created_date": "2024-08-26T02:14:56.603Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 6,
+  "fields": {
+    "product": 2,
+    "variation_category": "size",
+    "variation_value": "6",
+    "is_active": true,
+    "created_date": "2024-08-26T02:15:07.889Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 7,
+  "fields": {
+    "product": 2,
+    "variation_category": "size",
+    "variation_value": "9",
+    "is_active": true,
+    "created_date": "2024-08-26T03:56:12.757Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 8,
+  "fields": {
+    "product": 2,
+    "variation_category": "size",
+    "variation_value": "8",
+    "is_active": true,
+    "created_date": "2024-08-26T02:15:28.971Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 9,
+  "fields": {
+    "product": 3,
+    "variation_category": "color",
+    "variation_value": "Blue",
+    "is_active": true,
+    "created_date": "2024-08-26T02:24:20.547Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 10,
+  "fields": {
+    "product": 4,
+    "variation_category": "color",
+    "variation_value": "Orange",
+    "is_active": true,
+    "created_date": "2024-08-26T02:24:32.316Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 11,
+  "fields": {
+    "product": 3,
+    "variation_category": "size",
+    "variation_value": "S",
+    "is_active": true,
+    "created_date": "2024-08-26T02:24:43.468Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 12,
+  "fields": {
+    "product": 3,
+    "variation_category": "size",
+    "variation_value": "M",
+    "is_active": true,
+    "created_date": "2024-08-26T02:24:53.143Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 13,
+  "fields": {
+    "product": 3,
+    "variation_category": "size",
+    "variation_value": "L",
+    "is_active": true,
+    "created_date": "2024-08-26T02:25:03.617Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 14,
+  "fields": {
+    "product": 4,
+    "variation_category": "size",
+    "variation_value": "S",
+    "is_active": true,
+    "created_date": "2024-08-26T02:25:18.488Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 15,
+  "fields": {
+    "product": 4,
+    "variation_category": "size",
+    "variation_value": "L",
+    "is_active": true,
+    "created_date": "2024-08-26T02:25:29.804Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 16,
+  "fields": {
+    "product": 6,
+    "variation_category": "color",
+    "variation_value": "Black",
+    "is_active": true,
+    "created_date": "2024-08-27T06:10:29.401Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 17,
+  "fields": {
+    "product": 6,
+    "variation_category": "size",
+    "variation_value": "33.02 mm",
+    "is_active": true,
+    "created_date": "2024-08-27T06:11:02.205Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 18,
+  "fields": {
+    "product": 7,
+    "variation_category": "color",
+    "variation_value": "Brown",
+    "is_active": true,
+    "created_date": "2024-08-27T06:12:46.733Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 19,
+  "fields": {
+    "product": 7,
+    "variation_category": "size",
+    "variation_value": "Free Size",
+    "is_active": true,
+    "created_date": "2024-08-27T06:12:57.744Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 20,
+  "fields": {
+    "product": 8,
+    "variation_category": "color",
+    "variation_value": "Black",
+    "is_active": true,
+    "created_date": "2024-08-27T06:13:08.265Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 21,
+  "fields": {
+    "product": 8,
+    "variation_category": "size",
+    "variation_value": "Free Size",
+    "is_active": true,
+    "created_date": "2024-08-27T06:13:20.047Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 22,
+  "fields": {
+    "product": 9,
+    "variation_category": "color",
+    "variation_value": "Silver",
+    "is_active": true,
+    "created_date": "2024-08-27T06:13:43.867Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 23,
+  "fields": {
+    "product": 9,
+    "variation_category": "size",
+    "variation_value": "Free Size",
+    "is_active": true,
+    "created_date": "2024-08-27T06:13:55.326Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 24,
+  "fields": {
+    "product": 10,
+    "variation_category": "color",
+    "variation_value": "Black",
+    "is_active": true,
+    "created_date": "2024-08-27T06:16:11.334Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 25,
+  "fields": {
+    "product": 10,
+    "variation_category": "color",
+    "variation_value": "Brown",
+    "is_active": true,
+    "created_date": "2024-08-27T06:16:25.247Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 26,
+  "fields": {
+    "product": 10,
+    "variation_category": "size",
+    "variation_value": "30",
+    "is_active": true,
+    "created_date": "2024-08-27T06:16:50.114Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 27,
+  "fields": {
+    "product": 10,
+    "variation_category": "size",
+    "variation_value": "34",
+    "is_active": true,
+    "created_date": "2024-08-27T06:16:56.963Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 28,
+  "fields": {
+    "product": 10,
+    "variation_category": "size",
+    "variation_value": "36",
+    "is_active": true,
+    "created_date": "2024-08-27T06:17:12.084Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 29,
+  "fields": {
+    "product": 11,
+    "variation_category": "color",
+    "variation_value": "White",
+    "is_active": true,
+    "created_date": "2024-08-27T06:27:28.739Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 30,
+  "fields": {
+    "product": 11,
+    "variation_category": "size",
+    "variation_value": "M",
+    "is_active": true,
+    "created_date": "2024-08-27T06:27:41.476Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 31,
+  "fields": {
+    "product": 11,
+    "variation_category": "size",
+    "variation_value": "L",
+    "is_active": true,
+    "created_date": "2024-08-27T06:27:50.271Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 32,
+  "fields": {
+    "product": 11,
+    "variation_category": "size",
+    "variation_value": "L",
+    "is_active": true,
+    "created_date": "2024-08-27T06:27:55.822Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 33,
+  "fields": {
+    "product": 11,
+    "variation_category": "size",
+    "variation_value": "XL",
+    "is_active": true,
+    "created_date": "2024-08-27T06:28:04.453Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "user": 2,
+    "subject": "Quality",
+    "review": "Light weight and good looking, value for money go for it, thanks flipkart",
+    "rating": 5.0,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-26T02:09:11.628Z",
+    "updated_at": "2024-08-27T06:17:44.749Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 2,
+  "fields": {
+    "product": 2,
+    "user": 2,
+    "subject": "Quality",
+    "review": "Good",
+    "rating": 5.0,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-27T06:18:14.012Z",
+    "updated_at": "2024-08-27T06:18:14.012Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 3,
+  "fields": {
+    "product": 3,
+    "user": 2,
+    "subject": "Fabric Quality is poor",
+    "review": "bad",
+    "rating": 2.0,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-27T06:18:35.630Z",
+    "updated_at": "2024-08-27T06:18:35.630Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 4,
+  "fields": {
+    "product": 3,
+    "user": 1,
+    "subject": "Quality is Good",
+    "review": "Good",
+    "rating": 4.5,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-27T06:20:39.660Z",
+    "updated_at": "2024-08-27T06:20:39.660Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 5,
+  "fields": {
+    "product": 4,
+    "user": 2,
+    "subject": "Quality is Good",
+    "review": "",
+    "rating": 4.0,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-27T06:20:58.666Z",
+    "updated_at": "2024-08-27T06:20:58.666Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 6,
+  "fields": {
+    "product": 6,
+    "user": 2,
+    "subject": "Good",
+    "review": "",
+    "rating": 3.0,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-27T06:21:18.544Z",
+    "updated_at": "2024-08-27T06:21:18.544Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 7,
+  "fields": {
+    "product": 7,
+    "user": 1,
+    "subject": "Design nice",
+    "review": "",
+    "rating": 5.0,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-27T06:21:40.208Z",
+    "updated_at": "2024-08-27T06:21:40.208Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 8,
+  "fields": {
+    "product": 8,
+    "user": 2,
+    "subject": "Leather Quality is poor",
+    "review": "",
+    "rating": 1.5,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-27T06:22:04.727Z",
+    "updated_at": "2024-08-27T06:22:04.727Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 9,
+  "fields": {
+    "product": 9,
+    "user": 2,
+    "subject": "Good",
+    "review": "",
+    "rating": 4.5,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-27T06:23:04.510Z",
+    "updated_at": "2024-08-27T06:23:04.510Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 10,
+  "fields": {
+    "product": 10,
+    "user": 1,
+    "subject": "Stylish",
+    "review": "",
+    "rating": 5.0,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-27T06:23:25.447Z",
+    "updated_at": "2024-08-27T06:23:25.447Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 11,
+  "fields": {
+    "product": 11,
+    "user": 2,
+    "subject": "Good",
+    "review": "",
+    "rating": 4.5,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-27T06:28:27.208Z",
+    "updated_at": "2024-08-27T06:28:27.208Z"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "image": "store/products/adidas2.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 2,
+  "fields": {
+    "product": 1,
+    "image": "store/products/adidas3.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 3,
+  "fields": {
+    "product": 2,
+    "image": "store/products/puma1.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 4,
+  "fields": {
+    "product": 2,
+    "image": "store/products/puma2.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 5,
+  "fields": {
+    "product": 3,
+    "image": "store/products/allensolly2.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 6,
+  "fields": {
+    "product": 4,
+    "image": "store/products/allensolly12.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 7,
+  "fields": {
+    "product": 4,
+    "image": "store/products/allensolly13.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 8,
+  "fields": {
+    "product": 6,
+    "image": "store/products/smart_fire_bolt2.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 9,
+  "fields": {
+    "product": 7,
+    "image": "store/products/bracelet_1.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 10,
+  "fields": {
+    "product": 10,
+    "image": "store/products/cargo2.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 11,
+  "fields": {
+    "product": 11,
+    "image": "store/products/uspa2.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 12,
+  "fields": {
+    "product": 11,
+    "image": "store/products/uspa3.webp"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 1,
+  "fields": {
+    "cart_id": "0k2pz63ea73vndi0rvrhzkmn37m5krdb",
+    "date_added": "2024-08-26"
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "product": 1,
+    "cart": 1,
+    "quantity": 1,
+    "is_active": true,
+    "variations": [
+      2,
+      4
+    ]
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "product": 3,
+    "cart": null,
+    "quantity": 1,
+    "is_active": true,
+    "variations": [
+      9,
+      12
+    ]
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "product": 6,
+    "cart": null,
+    "quantity": 1,
+    "is_active": true,
+    "variations": [
+      16,
+      17
+    ]
+  }
+},
+{
+  "model": "admin_honeypot.loginattempt",
+  "pk": 1,
+  "fields": {
+    "username": "admin@gmail.com",
+    "ip_address": "127.0.0.1",
+    "session_key": "df7gfudazm7fjjy1ojtcy3hgk3739d9v",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+    "timestamp": "2024-08-27T02:31:39.182Z",
+    "path": "/admin/login/?next=/admin/"
+  }
+},
+{
+  "model": "admin_honeypot.loginattempt",
+  "pk": 2,
+  "fields": {
+    "username": "admin@gmail.com",
+    "ip_address": "127.0.0.1",
+    "session_key": "df7gfudazm7fjjy1ojtcy3hgk3739d9v",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+    "timestamp": "2024-08-27T02:31:41.400Z",
+    "path": "/admin/login/?next=/admin/"
   }
 }
 ]
