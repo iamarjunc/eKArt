@@ -144,29 +144,6 @@
             </div>
         </section>
 <!-- New category band section with search effect -->
-<section class="category-band" style="margin-top: 20px;"> <!-- Adjust margin as needed -->
-    <div class="container">
-        <div class="row justify-content-center">
-            {% for category in links %}
-            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center mb-3">
-                <form action="{% url 'search' %}" method="GET">
-                    {% if category.cat_image %}
-                    <button type="submit" class="btn p-0 border-0 bg-transparent">
-                        <img src="{{ category.cat_image.url }}" alt="{{ category.category_name }}" style="width: 60px; height: 60px; object-fit: cover;" class="img-fluid mb-2">
-                    </button>
-                    {% endif %}
-                    <input type="hidden" name="keyword" value="{{ category.category_name }}">
-                    <button type="submit" class="btn btn-link p-0 text-decoration-none">
-                        <div class="category-name" style="font-size: 14px; font-weight: bold; color: #000;">
-                            {{ category.category_name }}
-                        </div>
-                    </button>
-                </form>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
 
 
     </div>

@@ -89,7 +89,6 @@
                         {% for value in price_ranges %}
                             <option value="{{ value }}" {% if selected_max_price|stringformat:"i" == value|stringformat:"i" %}selected{% endif %}>₹{{ value }}</option>
                         {% endfor %}
-                        <option value="{{ max_price }}" {% if selected_max_price|stringformat:"i" == max_price|stringformat:"i" %}selected{% endif %}>₹{{ max_price }}+</option>
                     </select>
                 </div>
             </div>
