@@ -133,9 +133,16 @@ def product_detail(request,category_slug,product_slug):
 def search(request):
     products = Product.objects.order_by('-created_date')
 
-    if 'keyword' in request.GET:
-        keyword = request.GET['keyword']
-        if keyword:
+    # Get the keyword from the request
+    keyword = request.GET.get('keyword', '')
+
+    if keyword:
+        # First, filter products by matching category name
+        category = Category.objects.filter(category_name__icontains=keyword).first()
+        if category:
+            products = products.filter(category=category)
+        else:
+            # If no category matches, filter by description or product name
             products = products.filter(Q(decription__icontains=keyword) | Q(product_name__icontains=keyword))
 
     # Apply additional filters (color, size, price, etc.) if needed
@@ -184,6 +191,7 @@ def search(request):
         'price_ranges': price_ranges,  # Pass the generated price ranges
         'max_price': max_price,  # Pass the max_price to the template
     }
+    print(context)
 
     return render(request, 'store/store.html', context)
 
