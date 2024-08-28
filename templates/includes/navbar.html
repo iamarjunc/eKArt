@@ -264,6 +264,24 @@
                             </div>
                         </div>
                     </form>
+                    <script>
+                        document.querySelectorAll('.dropdown-item').forEach(function(item) {
+                            item.addEventListener('click', function(event) {
+                                event.preventDefault();
+                                var category = item.getAttribute('data-category');
+                                var keywordInput = document.getElementById('keywordInput');
+                                var form = document.getElementById('searchForm');
+                        
+                                if (category) {
+                                    keywordInput.value = category;
+                                } else {
+                                    keywordInput.value = ''; // Handle the 'All Products' case if needed
+                                }
+                        
+                                form.submit();
+                            });
+                        });
+                        </script>
                 </div>
             </div>
         </section>

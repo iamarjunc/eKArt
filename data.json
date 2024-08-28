@@ -1014,6 +1014,201 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2024-08-27T11:22:31.135Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "8",
+    "object_repr": "Watches",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2024-08-27T11:29:36.756Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "Titan  Gents Regalia Analog Watch - For Men",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"Titan  Gents Regalia Analog Watch - For Men\"}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"Titan  Gents Regalia Analog Watch - For Men\"}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"Titan  Gents Regalia Analog Watch - For Men\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2024-08-27T11:31:05.322Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "34",
+    "object_repr": "Multi Color",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2024-08-27T11:33:05.702Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "35",
+    "object_repr": "49.6 mm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2024-08-27T11:33:31.937Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "12",
+    "object_repr": "Good",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2024-08-27T11:35:40.866Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "9",
+    "object_repr": "Jeans",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2024-08-27T11:37:53.316Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "13",
+    "object_repr": "KILLER  Boys Slim Mid Rise Dark Blue Jeans",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"KILLER  Boys Slim Mid Rise Dark Blue Jeans\"}}, {\"added\": {\"name\": \"productgallery\", \"object\": \"KILLER  Boys Slim Mid Rise Dark Blue Jeans\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2024-08-27T11:38:28.232Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "36",
+    "object_repr": "Blue",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2024-08-27T11:38:57.399Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "37",
+    "object_repr": "7 - 8 Years",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2024-08-27T11:39:18.582Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "38",
+    "object_repr": "10 - 12 Years",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2024-08-27T11:39:37.431Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "39",
+    "object_repr": "17 - 18 Years",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2024-08-27T11:40:35.948Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "13",
+    "object_repr": "Quality is Good",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2024-08-27T11:46:03.941Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "10",
+    "object_repr": "Books",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2024-08-27T11:47:44.025Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "10",
+    "object_repr": "Books",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cat image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2024-08-27T11:48:36.591Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "10",
+    "object_repr": "Books",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -1815,10 +2010,26 @@
 },
 {
   "model": "sessions.session",
+  "pk": "dain22b70b610f34xwxfqc8wgym165zn",
+  "fields": {
+    "session_data": "eyJfc2Vzc2lvbl9pbml0X3RpbWVzdGFtcF8iOjE3MjQ3NDI3NjguMjY4MTEwOH0:1siqNk:fve5NQdVilagkP03LPOs9ituMdmB3ubdFFH8Z8AfwJ8",
+    "expire_date": "2024-09-10T07:12:48.268Z"
+  }
+},
+{
+  "model": "sessions.session",
   "pk": "ez2w1bnfkhyc9403o7q1emphkf1budf7",
   "fields": {
     "session_data": "eyJfc2Vzc2lvbl9pbml0X3RpbWVzdGFtcF8iOjE3MjQ3MzM0MjEuOTA1MTYxMX0:1sinwz:D66XwSTYuCTJ3hhfPr-a5EXwQXnd4IOAJ9XseyelTa4",
     "expire_date": "2024-09-10T04:37:01.964Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kq1qpww21xmj1hbaajxax5jquvetro75",
+  "fields": {
+    "session_data": "eyJfc2Vzc2lvbl9pbml0X3RpbWVzdGFtcF8iOjE3MjQ4NDY4OTkuMzUxNzE2fQ:1sjHTH:qyq_QCbOPl2ZPFKb9zgYgYOgmfSJAC_GN8vvaxaOs4U",
+    "expire_date": "2024-09-11T12:08:19.359Z"
   }
 },
 {
@@ -1906,6 +2117,26 @@
   }
 },
 {
+  "model": "category.category",
+  "pk": 8,
+  "fields": {
+    "category_name": "Watches",
+    "slug": "watches",
+    "description": "",
+    "cat_image": "photos/categories/watch.jpg"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 9,
+  "fields": {
+    "category_name": "Jeans",
+    "slug": "jeans",
+    "description": "",
+    "cat_image": "photos/categories/jeans.webp"
+  }
+},
+{
   "model": "accounts.account",
   "pk": 1,
   "fields": {
@@ -1916,7 +2147,7 @@
     "email": "admin@gmail.com",
     "phone_number": "123456789",
     "date_joined": "2024-08-26T01:52:05.185Z",
-    "last_login": "2024-08-27T06:06:52.345Z",
+    "last_login": "2024-08-27T11:45:08.299Z",
     "is_admin": true,
     "is_staff": true,
     "is_active": true,
@@ -2112,6 +2343,38 @@
     "category": 7,
     "created_date": "2024-08-27T06:25:31.437Z",
     "modified_date": "2024-08-27T06:26:44.156Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 12,
+  "fields": {
+    "product_name": "Titan  Gents Regalia Analog Watch - For Men",
+    "slug": "titan-gents-regalia-analog-watch-for-men",
+    "decription": "Style Code\r\n1688KM06",
+    "price": 14450,
+    "images": "photos/products/titan1.webp",
+    "stock": 2,
+    "is_available": true,
+    "category": 8,
+    "created_date": "2024-08-27T11:29:36.739Z",
+    "modified_date": "2024-08-27T11:29:36.739Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 13,
+  "fields": {
+    "product_name": "KILLER  Boys Slim Mid Rise Dark Blue Jeans",
+    "slug": "killer-boys-slim-mid-rise-dark-blue-jeans",
+    "decription": "Fabric\r\nCotton Lycra Blend",
+    "price": 569,
+    "images": "photos/products/killer1.webp",
+    "stock": 2,
+    "is_available": true,
+    "category": 9,
+    "created_date": "2024-08-27T11:37:53.300Z",
+    "modified_date": "2024-08-27T11:37:53.300Z"
   }
 },
 {
@@ -2478,6 +2741,72 @@
   }
 },
 {
+  "model": "store.variation",
+  "pk": 34,
+  "fields": {
+    "product": 12,
+    "variation_category": "color",
+    "variation_value": "Multi Color",
+    "is_active": true,
+    "created_date": "2024-08-27T11:31:05.322Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 35,
+  "fields": {
+    "product": 12,
+    "variation_category": "size",
+    "variation_value": "49.6 mm",
+    "is_active": true,
+    "created_date": "2024-08-27T11:33:05.687Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 36,
+  "fields": {
+    "product": 13,
+    "variation_category": "color",
+    "variation_value": "Blue",
+    "is_active": true,
+    "created_date": "2024-08-27T11:38:28.231Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 37,
+  "fields": {
+    "product": 13,
+    "variation_category": "size",
+    "variation_value": "7 - 8 Years",
+    "is_active": true,
+    "created_date": "2024-08-27T11:38:57.399Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 38,
+  "fields": {
+    "product": 13,
+    "variation_category": "size",
+    "variation_value": "10 - 12 Years",
+    "is_active": true,
+    "created_date": "2024-08-27T11:39:18.582Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 39,
+  "fields": {
+    "product": 13,
+    "variation_category": "size",
+    "variation_value": "17 - 18 Years",
+    "is_active": true,
+    "created_date": "2024-08-27T11:39:37.431Z"
+  }
+},
+{
   "model": "store.reviewrating",
   "pk": 1,
   "fields": {
@@ -2643,6 +2972,36 @@
   }
 },
 {
+  "model": "store.reviewrating",
+  "pk": 12,
+  "fields": {
+    "product": 12,
+    "user": 2,
+    "subject": "Good",
+    "review": "",
+    "rating": 4.5,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-27T11:33:31.937Z",
+    "updated_at": "2024-08-27T11:33:31.937Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 13,
+  "fields": {
+    "product": 13,
+    "user": 2,
+    "subject": "Quality is Good",
+    "review": "",
+    "rating": 5.0,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2024-08-27T11:40:35.948Z",
+    "updated_at": "2024-08-27T11:40:35.948Z"
+  }
+},
+{
   "model": "store.productgallery",
   "pk": 1,
   "fields": {
@@ -2736,6 +3095,46 @@
   "fields": {
     "product": 11,
     "image": "store/products/uspa3.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 13,
+  "fields": {
+    "product": 12,
+    "image": "store/products/titan2.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 14,
+  "fields": {
+    "product": 12,
+    "image": "store/products/titan3.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 15,
+  "fields": {
+    "product": 12,
+    "image": "store/products/titan4.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 16,
+  "fields": {
+    "product": 13,
+    "image": "store/products/killer2.webp"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 17,
+  "fields": {
+    "product": 13,
+    "image": "store/products/killer3.webp"
   }
 },
 {

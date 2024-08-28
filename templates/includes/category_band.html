@@ -2,7 +2,7 @@
     .category-slider {
         position: relative;
         overflow: hidden;
-        touch-action: pan-y; /* Allows vertical scrolling but prevents horizontal scrolling */
+        touch-action: pan-x; /* Allows horizontal scrolling */
     }
     
     .slider-inner {
@@ -20,38 +20,6 @@
         flex: 1 0 25%;
         box-sizing: border-box;
     }
-    
-    .slider-control-prev,
-    .slider-control-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color:rgb(124 124 124 / 50%);
-
-        color: #fff;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1; /* Ensure buttons are on top of the slider */
-    }
-    
-    .slider-control-prev {
-        left: 10px;
-    }
-    
-    .slider-control-next {
-        right: 10px;
-    }
-    
-    .slider-control-prev i,
-    .slider-control-next i {
-        margin: 0;
-    }
-    
     
 </style>
 <section class="category-band" style="margin-top: 20px;">
@@ -77,16 +45,6 @@
                     {% endfor %}
                 </div>
             </div>
-            <button class="slider-control-prev" role="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
-                  </svg>
-            </button>
-            <button class="slider-control-next" role="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
-                  </svg>
-            </button>
         </div>
 
         <!-- Regular category display for larger screens -->
@@ -111,25 +69,23 @@
         </div>
     </div>
 </section>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const prevButton = document.querySelector('.slider-control-prev');
-        const nextButton = document.querySelector('.slider-control-next');
         const sliderInner = document.querySelector('.slider-inner');
-        const sliderWrapper = document.querySelector('.slider-wrapper');
         const sliderItems = document.querySelectorAll('.slider-item');
         const itemWidth = sliderItems[0].offsetWidth;
         const visibleItems = 4; // Number of visible items at a time
         const totalItems = sliderItems.length;
         let currentIndex = 0;
-
+    
         let startX, endX;
-
+    
         function updateSlider() {
             const offset = -currentIndex * itemWidth;
             sliderInner.style.transform = `translateX(${offset}px)`;
         }
-
+    
         function handleSwipe() {
             if (endX < startX) {
                 // Swipe left
@@ -144,34 +100,19 @@
             }
             updateSlider();
         }
-
-        prevButton.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default button behavior
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateSlider();
-            }
-        });
-
-        nextButton.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default button behavior
-            if (currentIndex < totalItems - visibleItems) { // Show 4 items at a time
-                currentIndex++;
-                updateSlider();
-            }
-        });
-
+    
         // Touch events for swipe functionality
         sliderInner.addEventListener('touchstart', function(event) {
             startX = event.touches[0].clientX;
         });
-
+    
         sliderInner.addEventListener('touchmove', function(event) {
             endX = event.touches[0].clientX;
         });
-
+    
         sliderInner.addEventListener('touchend', function() {
             handleSwipe();
         });
     });
+    
 </script>
