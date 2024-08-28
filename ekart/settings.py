@@ -158,7 +158,7 @@ DATABASES = {
         'PORT': config('DATABASE_PORT'),
     }
 }
-# 
+
 
 # DATABASES = {
 #     'default': {

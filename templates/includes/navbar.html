@@ -1,15 +1,12 @@
 {% load static %}
 <style>
     .left-border-radius {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 
     /* Desktop view styles */
     @media (min-width: 992px) {
-        .custom-flex-class {
-            flex: 0 0 1.6666666%;
-        }
         .mobile-header-block {
             display: none;
         }
@@ -26,35 +23,92 @@
         .desktop-header-block {
             display: none;
         }
-
         .navbar-toggler {
             display: none;
         }
-
         .header-main .header-content {
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            align-items: stretch;
         }
-
+        .header-main .header-content .search-wrap {
+            margin-bottom: 10px;
+        }
         .header-main .header-content .search {
-            flex: 1;
+            display: flex;
+            align-items: center;
             margin: 0 10px;
         }
-
-        .header-main .header-content .category-wrap {
-            margin-right: auto;
+        .header-main .header-content .form-control {
+            flex: 1;
+            width: 100%; /* Ensure the search bar takes full width */
         }
-
-        .header-main .header-content .cart-wrap {
-            margin-left: auto;
+        .header-main .header-content .input-group-append {
+            flex: 0 0 auto; /* Keep buttons fixed size */
+        }
+        .cart-band {
+            padding: 10px;
+            background-color: #f8f9fa;
+            text-align: right;
+            border-top: 1px solid #ddd;
+        }
+        .cart-band a {
+            display: inline-flex;
+            align-items: center;
+            color: #000;
+            text-decoration: none;
+        }
+        .cart-band .icon {
+            margin-right: 8px;
+        }
+        /* Adjusting widget-header size for mobile view */
+        .widget-header {
+            font-size: 0.9rem; /* Decrease font size */
+        }
+        .widget-header .title {
+            font-size: 0.59rem; /* Decrease title size */
+        }
+        .widget-header a {
+            font-size: 0.85rem; /* Decrease link size */
+        }
+        .widget-header small {
+            font-size: 0.75rem; /* Adjust small text size */
+        }
+        .widget-header div {
+            margin-top: 5px; /* Adjust margin between title and links */
+        }
+        .brand-wrap .logo {
+            width: 120px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .top-band {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+        .top-band .logo {
+            width: 100px; /* Adjust logo size */
+        }
+        .top-band .widget-header {
+            margin-right: 10px; /* Adjust spacing if needed */
+            font-size: 0.8rem;
+        }
+        .top-band .cart-button {
+            margin-left: 10px; /* Adjust spacing if needed */
+        }
+        .header-content {
+            margin-top: 10px;
         }
     }
+
 </style>
 
 <header class="section-header">
     <!-- Desktop View -->
     <div class="desktop-header-block">
-        <!-- Existing header-main section -->
         <section class="header-main border-bottom">
             <div class="container">
                 <div class="row align-items-center">
@@ -143,55 +197,75 @@
                 </div>
             </div>
         </section>
-<!-- New category band section with search effect -->
-
-
     </div>
-
+    
     <!-- Mobile View -->
     <div class="mobile-header-block">
-        <section class="header-main border-bottom">
+        <section class="header-main border-bottom py-2">
             <div class="container">
-                <div class="header-content">
-                    <div class="col-4">
-                        <div class="category-wrap dropdown d-inline-block">
-                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-                                All category
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="{% url 'store'%}">All Products</a>
-                                {% for category in links %}
-                                    <a class="dropdown-item" href="{{category.get_url}}">{{category.category_name}}</a>
-                                {% endfor %}
-                            </div>
+                <!-- Top band for logo, user details, and cart button -->
+                <div class="top-band d-flex align-items-center justify-content-between">
+                    <!-- Brand logo -->
+                    <a href="{% url 'home' %}" class="brand-wrap">
+                        <img class="logo" src="https://teststatic-livid.vercel.app/images/shopkart.png">
+                    </a>
+                    <!-- User details -->
+                    {% if user.id is None %}
+                    <div class="widget-header">
+                        <small class="title text-muted">Welcome guest!</small>
+                        <div>
+                            <a href="{% url 'login' %}">Sign in</a> <span class="dark-transp"> | </span>
+                            <a href="{% url 'register' %}"> Register</a>
                         </div>
                     </div>
-
-                    <div class="col-4">
-                        <form action="{% url "search" %}" class="search" method='GET'>
-                            <div class="input-group w-100">
-                                <input type="text" class="form-control" placeholder="Search" name="keyword">
+                    {% else %}
+                    <div class="widget-header">
+                        <small class="title text-muted">Welcome {{user.first_name}}!</small>
+                        <div>
+                            <a href="{% url 'dashboard' %}">Dashboard</a> <span class="dark-transp"> | </span>
+                            <a href="{% url 'logout' %}"> Logout</a>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <!-- Cart button -->
+                    <a href="{% url 'cart' %}" class="widget-header pl-3 ml-3">
+                        <div class="icon icon-sm rounded-circle border">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                            </svg>
+                        </div>
+                        <span class="badge badge-pill badge-danger notify">{{cart_count}}</span>
+                    </a>
+                </div>
+                <!-- Search bar -->
+                <div class="header-content">
+                    <form id="searchForm" action="{% url 'search' %}" method="GET">
+                        <div class="search-wrap">
+                            <div class="input-group">
+                                <div class="input-group-append">
+                                    <div class="category-wrap dropdown d-inline-block">
+                                        <button id="dropdownMenuButton" type="button" class="btn btn-info dropdown-toggle left-border-radius" data-toggle="dropdown">
+                                            All
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#" data-category="">All Products</a>
+                                            {% for category in links %}
+                                            <a class="dropdown-item" href="#" data-category="{{ category.category_name }}">{{ category.category_name }}</a>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <input id="keywordInput" type="text" class="form-control" style="width:60%;" placeholder="Search" name="keyword">
                                 <div class="input-group-append">
                                     <button class="btn btn-info" type="submit">
                                         <i class="fa fa-search"></i>
                                     </button>
                                 </div>
                             </div>
-                        </form> <!-- search-wrap .end// -->
-                    </div>
-
-                    <div class="col-4 text-right">
-                        <a href="{% url "cart" %}" class="widget-header">
-                            <div class="icon icon-sm rounded-circle border">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
-                                </svg>
-                            </div>
-                            <span class="badge badge-pill badge-danger notify">{{cart_count}}</span>
-                        </a>
-                    </div>
-                </div> <!-- header-content .// -->
-            </div> <!-- container.// -->
-        </section> <!-- header-main .// -->
-    </div> <!-- mobile-header-block -->
-</header> <!-- section-header.// -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</header>
