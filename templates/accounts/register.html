@@ -4,84 +4,119 @@
 
 <style>
     .errorlist {
-        list-style-type: none; /* Remove bullet points */
-        padding-left: 0; /* Remove left padding */
-        color: red; /* Change the text color to red */
+        list-style-type: none;
+        padding-left: 0;
+        color: red;
     }
 
     .errorlist li {
-        color: red; /* Ensure the text color of each error is red */
+        color: red;
+    }
+
+    /* General Styles */
+    .card {
+        max-width: 520px;
+        margin-top: 40px;
+    }
+    .card-body {
+        padding: 20px;
+    }
+    .form-group input,
+    .form-group select {
+        width: 100%;
+    }
+    .btn-block {
+        width: 100%;
+    }
+
+    /* Mobile Specific Styles */
+    @media (max-width: 768px) {
+        .card {
+            max-width: 100% !important;
+            margin-top: 20px;
+        }
+        .card-body {
+            padding: 15px;
+        }
+        .form-group input,
+        .form-group select {
+            font-size: 14px; /* Adjust font size */
+            padding: 8px; /* Adjust padding */
+        }
+        .btn-block {
+            font-size: 14px; /* Adjust button font size */
+            padding: 10px; /* Adjust button padding */
+        }
+        .form-row {
+            margin-bottom: 10px; /* Reduce spacing between rows */
+        }
     }
 </style>
-
 
 <!-- ========================= SECTION CONTENT ========================= -->
 <section class="section-content padding-y">
 
 <!-- ============================ COMPONENT REGISTER   ================================= -->
-	<div class="card mx-auto" style="max-width:520px; margin-top:40px;">
+    <div class="card mx-auto">
       <article class="card-body">
         {% include "includes/alert.html" %}
         {% if form.email.errors %}
         <div class="alert alert-danger">
-            {{ form.email.errors|striptags }} <!-- Renders the error message without HTML tags -->
+            {{ form.email.errors|striptags }}
         </div>
     {% endif %}
     {% if form.non_field_errors %}
         <div class="alert alert-danger">
-            {{ form.non_field_errors|striptags }} <!-- Renders the non-field error message without HTML tags -->
+            {{ form.non_field_errors|striptags }}
         </div>
     {% endif %}
     
-        
-		<header class="mb-4"><h4 class="card-title">Sign up</h4></header>
-		<form action = "{% url "register" %}" method="POST">
+        <header class="mb-4"><h4 class="card-title mb-4 text-center">Sign up</h4></header>
+        <form action="{% url "register" %}" method="POST">
             {% csrf_token %}
-				<div class="form-row">
-					<div class="col form-group">
-						<label>First name</label>
-					  	{{form.first_name}}
-					</div> <!-- form-group end.// -->
-					<div class="col form-group">
-						<label>Last name</label>
-					  	{{form.last_name}}
-					</div> <!-- form-group end.// -->
-				</div> <!-- form-row end.// -->
-				
-				<div class="form-row">
-					<div class="form-group col-md-6">
-                        <label>Email Address</label>
-                        {{form.email}}
-					</div> <!-- form-group end.// -->
-					<div class="form-group col-md-6">
-					  <label>Phone Number</label>
-                      {{form.phone_number}}					  
-					</div> <!-- form-group end.// -->
-				</div> <!-- form-row.// -->
-				<div class="form-row">
-					<div class="form-group col-md-6">
-						<label>Create password</label>
-                        {{form.password}}
-
-					</div> <!-- form-group end.// --> 
-					<div class="form-group col-md-6">
-						<label>Repeat password</label>
-					    {{form.confirm_password}}
-					</div> <!-- form-group end.// -->  
-				</div>
-			    <div class="form-group">
-			        <button type="submit" class="btn btn-info btn-block"> Register  </button>
-			    </div> <!-- form-group// -->  
-                    
-                {% comment %} {{form.email.errors}}
-                {{form.non_field_errors}} {% endcomment %}
-			</form>
-		</article><!-- card-body.// -->
+            <div class="form-row">
+                <div class="col form-group">
+                    <label>First name</label>
+                  	{{ form.first_name }}
+                </div>
+                <div class="col form-group">
+                    <label>Last name</label>
+                  	{{ form.last_name }}
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Email Address</label>
+                    {{ form.email }}
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Phone Number</label>
+                    {{ form.phone_number }}
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Create password</label>
+                    {{ form.password }}
+                </div> 
+                <div class="form-group col-md-6">
+                    <label>Repeat password</label>
+                    {{ form.confirm_password }}
+                </div>  
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-info btn-block"> Register </button>
+            </div>  
+                
+            {% comment %} {{form.email.errors}}
+            {{form.non_field_errors}} {% endcomment %}
+        </form>
+    </article><!-- card-body.// -->
     </div> <!-- card .// -->
     <p class="text-center mt-4">Have an account? <a href="{% url "login" %}">Log In</a></p>
     <br><br>
 <!-- ============================ COMPONENT REGISTER  END.// ================================= -->
-
 
 </section>
 <!-- ========================= SECTION CONTENT END// ========================= -->
