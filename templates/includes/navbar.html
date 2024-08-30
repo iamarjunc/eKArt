@@ -1,5 +1,8 @@
 {% load static %}
 <style>
+    #carthead{
+        display:none;
+    }
     .left-border-radius {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
@@ -241,7 +244,9 @@
                 <div class="header-content">
                     <form id="searchForm" action="{% url 'search' %}" method="GET">
                         <div class="search-wrap">
-                            <div class="input-group">
+                            
+                            <h3 class="text-center" id="carthead">Your Cart</h3>
+                            <div class="input-group" id="input-group">
                                 <div class="input-group-append">
                                     <div class="category-wrap dropdown d-inline-block">
                                         <button id="dropdownMenuButton" type="button" class="btn btn-info dropdown-toggle left-border-radius" data-toggle="dropdown">
