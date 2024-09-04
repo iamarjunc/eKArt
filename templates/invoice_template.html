@@ -1,0 +1,66 @@
+<div style="width: 100%; max-width: 800px; margin: 2px auto; padding: 2px; background-color: #f9f9f9;font-family: Arial, sans-serif; font-size: 14px;">
+    <!-- Header -->
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #007bff; padding-bottom: 10px;">
+        
+    <div style="border-bottom: 2px solid #007bff; padding-bottom: 10px; text-align: center;">
+        <img src="https://teststatic-livid.vercel.app/images/shopkart.png" alt="Invoice logo" style="max-height: 50px;">
+    </div></br>
+        <div style="text-align: left; flex: 1;">
+            <strong>Invoiced To: </strong>{{ order.full_name }}, {{ order.full_address }}, {{ order.city }}, {{ order.state }}
+        </div>
+    </div>
+    
+    <!-- Order Details -->
+    <div style="margin-top: 15px;">
+        <p><strong>Order Number:</strong> {{ order.order_number }}</p>
+        <p><strong>Transaction Id:</strong> {{ order.payment.payment_id }}</p>
+        <p><strong>Order Date:</strong> {{ order.created_at }}</p>
+        <p><strong>Status:</strong> {{ order.status }}</p>
+    </div>
+
+    <!-- Product Table -->
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px; background-color: #007bff; color: white; text-align: left;">Product</th>
+                <th style="border: 1px solid #ddd; padding: 8px; background-color: #007bff; color: white; text-align: center;">Qty</th>
+                <th style="border: 1px solid #ddd; padding: 8px; background-color: #007bff; color: white; text-align: right;">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in order_products %}
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">
+                    {{ item.product.product_name }}
+                    <p style="font-size: 12px; color: #666;">
+                        {% for variation in item.variations.all %}
+                            {{ variation.variation_category }}: {{ variation.variation_value }}<br>
+                        {% endfor %}
+                    </p>
+                </td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">{{ item.quantity }}</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: right;">  {{ item.product_price }} Rs.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" style="border: 1px solid #ddd; padding: 8px; text-align: right;"><strong>Subtotal:</strong></td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: right;">  {{ subtotal }} Rs.</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="border: 1px solid #ddd; padding: 8px; text-align: right;"><strong>Tax:</strong></td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: right;">  {{ order.tax }} Rs.</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="border: 1px solid #ddd; padding: 8px; text-align: right; background-color: #f1f1f1;"><strong>Grand Total:</strong></td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: right; background-color: #f1f1f1;">  {{ order.order_total }} Rs.</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Footer -->
+    <div style="margin-top: 20px; text-align: center;border-bottom: 2px solid #007bff;"><br/>
+        <p style="margin-bottom: 0;">Thank you for shopping with us!</p>
+    </div>
+</div>

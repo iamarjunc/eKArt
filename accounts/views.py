@@ -1,4 +1,5 @@
 from email.message import EmailMessage
+from io import BytesIO
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
@@ -8,6 +9,8 @@ from django.contrib import messages
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 import requests
+from django.template.loader import get_template
+from xhtml2pdf import pisa
 # verification email
 from django.contrib.sites.shortcuts import get_current_site
 from django.template.loader import render_to_string
@@ -309,3 +312,34 @@ def order_detail(request, order_id):
         'subtotal':subtotal
     }
     return render(request, 'accounts/order_detail.html',context)
+
+
+
+def render_to_pdf(template_src, context_dict={}):
+    template = get_template(template_src)
+    html = template.render(context_dict)
+    result = BytesIO()
+    pdf = pisa.pisaDocument(BytesIO(html.encode("UTF-8")), result)
+    if not pdf.err:
+        return HttpResponse(result.getvalue(), content_type='application/pdf')
+    return None
+
+def generate_invoice_pdf(request, order_id):
+    # Fetch order and related data based on order_id
+    order = Order.objects.get(id=order_id)
+    order_products = OrderProduct.objects.filter(order=order)
+
+    context = {
+        'order': order,
+        'order_products': order_products,
+        'subtotal': sum([op.product_price * op.quantity for op in order_products]),  # Calculate subtotal
+    }
+
+    pdf = render_to_pdf('invoice_template.html', context)
+    if pdf:
+        response = HttpResponse(pdf, content_type='application/pdf')
+        filename = f"Invoice_{order.order_number}.pdf"
+        content = f"inline; filename={filename}"
+        response['Content-Disposition'] = content
+        return response
+    return HttpResponse("PDF could not be generated")

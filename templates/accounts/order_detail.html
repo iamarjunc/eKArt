@@ -14,7 +14,7 @@
                         <!-- Start .row -->
                         <div class="col-lg-6">
                             <!-- col-lg-6 start here -->
-                            <div class="invoice-logo"><img src="https://teststatic-livid.vercel.app/images/logo.png" alt="Invoice logo" style="max-height: 40px;"></div>
+                            <div class="invoice-logo"><img src="https://teststatic-livid.vercel.app/images/shopkart.png" alt="Invoice logo" style="max-height: 40px;"></div>
                         </div>
                         <!-- col-lg-6 end here -->
                         <div class="col-lg-6">
@@ -87,6 +87,8 @@
                                             </tr>
                                         </tfoot>
                                     </table>
+                                    <a href="{% url 'generate_invoice_pdf' order.id %}" class="btn btn-primary">Download PDF</a>
+
                                 </div>
                             </div>
                             <div class="invoice-footer mt25">
