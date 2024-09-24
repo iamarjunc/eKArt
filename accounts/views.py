@@ -55,7 +55,7 @@ def register(request):
             })
             to_email = email
             send_email = EmailMessage(mail_subject,message, to=[to_email])
-            send_email.send()
+            # send_email.send()
             # messages.success(request,'Thank you for registering with us, We have sent you a verification email to your email address. Please verify it.')
 
             return redirect(reverse('login') + '?command=verification&email=' + email)
@@ -193,7 +193,7 @@ def forgotpassword(request):
             })
             to_email = email
             send_email = EmailMessage(mail_subject,message, to=[to_email])
-            send_email.send()
+            # send_email.send()
             messages.success(request, 'Password reset email has been sent to your email address.')
             return redirect('login')
             
